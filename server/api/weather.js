@@ -15,7 +15,7 @@ class Weather {
 
     getWeatherData = async(zipCode, tempMetric) => {
         /**
-         * Use get api for "By ZIP code" (https://openweathermap.org/current#zip)
+         * - get api "By ZIP code" (https://openweathermap.org/current#zip)
          * - "us" query = "United States"
          * - "process.env.WEATHER_KEY" is the api key the .env file
          * - "units" query can be either imperial (Fahrenheit) or metric (Celsius)
