@@ -20,7 +20,7 @@ class Weather {
          * - "units" query can be either imperial (Fahrenheit) or metric (Celsius)
          */
 
-        let url = `${BASE_URL}?zip=${zipCode},us&appid=${process.env.WEATHER_KEY}&units=${tempMetric}`
+        let url = `${BASE_URL}?zip=${zipCode},us&appid=${process.env.WEATHER_API_KEY}&units=${tempMetric}`
 
         return(await axios.get(url)).data
     }
