@@ -1,12 +1,11 @@
-import axios from 'axios'
-
 require('dotenv').config({path: './../../../.env'})
+const axios = require('axios')
 
 const BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 class Weather {
     /**
-     * Gets the weather data based on the zipcode and which temp system to converge to (imperial/metric system)
+     * Connect to the API and grab data to send back to the frontend
      *
      * @param {number} zipCode The zipcode used to get the weather info from the api
      * @param {string} tempMetric This is either "imperial" (use Fahrenheit) or "metric" (use Celsius)

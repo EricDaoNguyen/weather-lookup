@@ -1,10 +1,14 @@
-import express from 'express';
-
 // use express's router to route all API endpoints
+const express = require('express')
 const router = express.Router()
 
 // use Weather class to call and get weather data from api
 const Weather = require('./weather')
+
+/**
+ * Handles which type of traffic goes where depending on
+ * the type of endpoint is called
+ */
 
 // GET request, get weather data statically
 router.get('/weather', async(request, response) => {
